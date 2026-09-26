@@ -48,12 +48,13 @@ IDENTITY_STAGE = dict(color_mult=1.0, range_mult=1.0, bias_add=0.0, angle_add=0.
 
 # T1 (1.0.0-dev.1): intensity only - v0.1.0's relative lift on v4.8's dimmer baseline.
 # T2 (1.0.0-dev.2): reach - v0.1.0's range/bias values as the starting point.
+# T3+T4 (1.0.0-dev.3): width +5 deg; near-field spill x1.5 / range x1.3.
 STAGE_LEVERS = {
-    "low_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.3, bias_add=0.15),
-    "hi_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.4, bias_add=0.15),
-    "front_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.4, bias_add=0.15),
-    "roof_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.5, bias_add=0.2),
-    "front_roof_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.5, bias_add=0.2),
+    "low_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.3, bias_add=0.15, angle_add=5.0, refr_fraction_mult=1.5, refr_range_mult=1.3),
+    "hi_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.4, bias_add=0.15, angle_add=5.0, refr_fraction_mult=1.5, refr_range_mult=1.3),
+    "front_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.4, bias_add=0.15, angle_add=5.0, refr_fraction_mult=1.5, refr_range_mult=1.3),
+    "roof_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.5, bias_add=0.2, angle_add=5.0, refr_fraction_mult=1.5, refr_range_mult=1.3),
+    "front_roof_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.5, bias_add=0.2, angle_add=5.0, refr_fraction_mult=1.5, refr_range_mult=1.3),
 }
 
 #   default_scale_mult  flare sprite size up close
