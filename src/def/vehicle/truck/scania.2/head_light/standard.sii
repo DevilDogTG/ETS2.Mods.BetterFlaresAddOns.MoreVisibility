@@ -17,8 +17,8 @@ accessory_head_lights_data : std.scania.2.head_light
 	low_beam_color: (2.8917, 3.25755, 4.32)
 	low_beam_color_specular: (1.4445, 1.6335, 2.16)
 	low_beam_color_ambient: (0.001445, 0.001633, 0.00216)
-	low_beam_bias: 0.0
-	low_beam_range: 100.0
+	low_beam_bias: 0.15
+	low_beam_range: 130.0
 	low_beam_angle: 95.0
 	low_beam_aspect: 3.0
 	low_beam_refracted_color_fraction: 0.01
@@ -34,8 +34,8 @@ accessory_head_lights_data : std.scania.2.head_light
 	hi_beam_color: (3.4695, 3.9096, 5.184)
 	hi_beam_color_specular: (1.7415, 1.9575, 2.592)
 	hi_beam_color_ambient: (0.001741, 0.001958, 0.002592)
-	hi_beam_bias: 0.0
-	hi_beam_range: 200.0
+	hi_beam_bias: 0.15
+	hi_beam_range: 280.0
 	hi_beam_angle: 95.0
 	hi_beam_aspect: 3.0
 	hi_beam_refracted_color_fraction: 0.01
@@ -51,8 +51,8 @@ accessory_head_lights_data : std.scania.2.head_light
 	front_beam_color: (3.7584, 4.23495, 5.616)
 	front_beam_color_specular: (1.8765, 2.1195, 2.808)
 	front_beam_color_ambient: (0.001877, 0.00212, 0.002808)
-	front_beam_bias: 0.0
-	front_beam_range: 200.0
+	front_beam_bias: 0.15
+	front_beam_range: 280.0
 	front_beam_angle: 95.0
 	front_beam_aspect: 3.0
 	front_beam_refracted_color_fraction: 0.01
@@ -68,8 +68,8 @@ accessory_head_lights_data : std.scania.2.head_light
 	roof_beam_color: (3.7584, 4.23495, 5.616)
 	roof_beam_color_specular: (1.8765, 2.1195, 2.808)
 	roof_beam_color_ambient: (0.001877, 0.00212, 0.002808)
-	roof_beam_bias: 0.0
-	roof_beam_range: 240.0
+	roof_beam_bias: 0.2
+	roof_beam_range: 360.0
 	roof_beam_angle: 95.0
 	roof_beam_aspect: 3.0
 	roof_beam_refracted_color_fraction: 0.01
@@ -85,8 +85,8 @@ accessory_head_lights_data : std.scania.2.head_light
 	front_roof_beam_color: (4.0473, 4.5603, 6.048)
 	front_roof_beam_color_specular: (2.025, 2.2815, 3.024)
 	front_roof_beam_color_ambient: (0.002025, 0.002282, 0.003024)
-	front_roof_beam_bias: 0.0
-	front_roof_beam_range: 240.0
+	front_roof_beam_bias: 0.2
+	front_roof_beam_range: 360.0
 	front_roof_beam_angle: 95.0
 	front_roof_beam_aspect: 3.0
 	front_roof_beam_refracted_color_fraction: 0.01
