@@ -1,0 +1,4 @@
+# Generated from upstream Better Flares files byte-for-byte (mixed CRLF/LF).
+# Store as-is so core.autocrlf never rewrites them and regeneration never churns.
+src/def/** -text
+src/unit/** -text
