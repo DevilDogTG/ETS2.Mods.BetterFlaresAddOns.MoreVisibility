@@ -1,0 +1,17 @@
+[orange]DriveDogs: Better Flares More Visibility (DOT 7500K)
+
+[normal]An add-on for Better Flares v4.8 - Headlights DOT 7500k. Headlights reach farther and
+spread wider for more comfortable night driving, and the road stays readable in bad daytime
+conditions (rain, fog, overcast) - while keeping Better Flares' realistic mood.
+
+Requirements / load order (top = highest priority in Mod Manager):
+- DriveDogs: Better Flares More Visibility (DOT 7500K)   <- this mod, above both below
+- Better Flares v4.8 - Headlights DOT 7500k
+- Better Flares v4.8 - Base
+
+Only for Better Flares v4.8 with the DOT 7500k headlight option. Not compatible with other
+Better Flares headlight color/pattern options, or with any mod that replaces truck head_light
+definitions.
+
+[orange]Work in progress
+[normal]Development build - values are being tuned in-game.
