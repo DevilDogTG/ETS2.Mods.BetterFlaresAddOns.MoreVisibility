@@ -46,12 +46,13 @@ OWNED_DIRS = ("def/vehicle/truck", FLARE_DIR)
 IDENTITY_STAGE = dict(color_mult=1.0, range_mult=1.0, bias_add=0.0, angle_add=0.0,
                       refr_fraction_mult=1.0, refr_range_mult=1.0)
 
+# T1 (1.0.0-dev.1): intensity only - v0.1.0's relative lift on v4.8's dimmer baseline.
 STAGE_LEVERS = {
-    "low_beam": dict(IDENTITY_STAGE),
-    "hi_beam": dict(IDENTITY_STAGE),
-    "front_beam": dict(IDENTITY_STAGE),
-    "roof_beam": dict(IDENTITY_STAGE),
-    "front_roof_beam": dict(IDENTITY_STAGE),
+    "low_beam": dict(IDENTITY_STAGE, color_mult=1.35),
+    "hi_beam": dict(IDENTITY_STAGE, color_mult=1.35),
+    "front_beam": dict(IDENTITY_STAGE, color_mult=1.35),
+    "roof_beam": dict(IDENTITY_STAGE, color_mult=1.35),
+    "front_roof_beam": dict(IDENTITY_STAGE, color_mult=1.35),
 }
 
 #   default_scale_mult  flare sprite size up close

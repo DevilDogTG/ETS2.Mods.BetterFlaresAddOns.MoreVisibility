@@ -1,0 +1,112 @@
+SiiNunit
+{
+accessory_head_lights_data : std.scaniapbkok.143m.head_light
+{
+	name: "@@halogen@@"
+	price: 180
+	unlock: 0
+	icon: "lamp_standard_01"
+	
+	reflectors_offset: (0.0, 1.0, -3.288)
+	reflectors_distance: 1.92
+	left_rot: (0.0, 0.0, 0.0)
+	right_rot: (0.0, 0.0, 0.0)
+	
+	low_beam_left_rot: (-6.2, 2.2, -0.5) # +up -down, +left -right, +counter clw -clw
+	low_beam_right_rot: (-6.3, 0.0, 0.7)
+	low_beam_color: (2.8917, 3.25755, 4.32)
+	low_beam_color_specular: (1.4445, 1.6335, 2.16)
+	low_beam_color_ambient: (0.001445, 0.001633, 0.00216)
+	low_beam_bias: 0.0
+	low_beam_range: 100.0
+	low_beam_angle: 95.0
+	low_beam_aspect: 3.0
+	low_beam_refracted_color_fraction: 0.01
+	low_beam_refracted_offset_yz: (0.0, -1.2) # negative is further from truck
+	low_beam_refracted_pitch: -40.0
+	low_beam_refracted_bias: 0.0
+	low_beam_refracted_range: 4.0
+	low_beam_refracted_angle: 150.0
+	low_beam_refracted_aspect: 2.0
+	
+	hi_beam_left_rot: (-6.2, 2.2, -0.5)
+	hi_beam_right_rot: (-6.3, 0.0, 0.7)
+	hi_beam_color: (3.4695, 3.9096, 5.184)
+	hi_beam_color_specular: (1.7415, 1.9575, 2.592)
+	hi_beam_color_ambient: (0.001741, 0.001958, 0.002592)
+	hi_beam_bias: 0.0
+	hi_beam_range: 200.0
+	hi_beam_angle: 95.0
+	hi_beam_aspect: 3.0
+	hi_beam_refracted_color_fraction: 0.01
+	hi_beam_refracted_offset_yz: (0.0, -1.2)
+	hi_beam_refracted_pitch: -40.0
+	hi_beam_refracted_bias: 0.0
+	hi_beam_refracted_range: 4.0
+	hi_beam_refracted_angle: 150.0
+	hi_beam_refracted_aspect: 2.0
+	
+	front_beam_left_rot: (-6.2, 2.2, -0.5)
+	front_beam_right_rot: (-6.3, 0.0, 0.7)
+	front_beam_color: (3.7584, 4.23495, 5.616)
+	front_beam_color_specular: (1.8765, 2.1195, 2.808)
+	front_beam_color_ambient: (0.001877, 0.00212, 0.002808)
+	front_beam_bias: 0.0
+	front_beam_range: 200.0
+	front_beam_angle: 95.0
+	front_beam_aspect: 3.0
+	front_beam_refracted_color_fraction: 0.01
+	front_beam_refracted_offset_yz: (0.0, -1.2)
+	front_beam_refracted_pitch: -40.0
+	front_beam_refracted_bias: 0.0
+	front_beam_refracted_range: 4.0
+	front_beam_refracted_angle: 150.0
+	front_beam_refracted_aspect: 2.0
+	
+	roof_beam_left_rot: (-6.2, 2.2, -0.5)
+	roof_beam_right_rot: (-6.3, 0.0, 0.7)
+	roof_beam_color: (3.7584, 4.23495, 5.616)
+	roof_beam_color_specular: (1.8765, 2.1195, 2.808)
+	roof_beam_color_ambient: (0.001877, 0.00212, 0.002808)
+	roof_beam_bias: 0.0
+	roof_beam_range: 240.0
+	roof_beam_angle: 95.0
+	roof_beam_aspect: 3.0
+	roof_beam_refracted_color_fraction: 0.01
+	roof_beam_refracted_offset_yz: (0.0, -1.2)
+	roof_beam_refracted_pitch: -40.0
+	roof_beam_refracted_bias: 0.0
+	roof_beam_refracted_range: 4.0
+	roof_beam_refracted_angle: 150.0
+	roof_beam_refracted_aspect: 2.0
+	
+	front_roof_beam_left_rot: (-6.2, 2.2, -0.5)
+	front_roof_beam_right_rot: (-6.3, 0.0, 0.7)
+	front_roof_beam_color: (4.0473, 4.5603, 6.048)
+	front_roof_beam_color_specular: (2.025, 2.2815, 3.024)
+	front_roof_beam_color_ambient: (0.002025, 0.002282, 0.003024)
+	front_roof_beam_bias: 0.0
+	front_roof_beam_range: 240.0
+	front_roof_beam_angle: 95.0
+	front_roof_beam_aspect: 3.0
+	front_roof_beam_refracted_color_fraction: 0.01
+	front_roof_beam_refracted_offset_yz: (0.0, -1.2)
+	front_roof_beam_refracted_pitch: -40.0
+	front_roof_beam_refracted_bias: 0.0
+	front_roof_beam_refracted_range: 4.0
+	front_roof_beam_refracted_angle: 150.0
+	front_roof_beam_refracted_aspect: 2.0
+	
+	low_beam_mask: "/material/custom/bf_trucklight_mask_norm_dot_c.tobj"
+	low_beam_refracted_mask: "/material/custom/bf_trucklight_mask_refracted.tobj"
+	hi_beam_mask: "/material/custom/bf_trucklight_mask_high.tobj"
+	hi_beam_refracted_mask: "/material/custom/bf_trucklight_mask_refracted.tobj"
+	roof_beam_mask: "/material/custom/bf_trucklight_mask_roof.tobj"
+	roof_beam_refracted_mask: "/material/custom/bf_trucklight_mask_refracted.tobj"
+	front_beam_mask: "/material/custom/bf_trucklight_mask_front.tobj"
+	front_beam_refracted_mask: "/material/custom/bf_trucklight_mask_refracted.tobj"
+	front_roof_beam_mask: "/material/custom/bf_trucklight_mask_roofront.tobj"
+	front_roof_beam_refracted_mask: "/material/custom/bf_trucklight_mask_refracted.tobj"
+	no_parking_light: true
+}
+}
