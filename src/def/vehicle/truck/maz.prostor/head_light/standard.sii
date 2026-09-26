@@ -20,7 +20,7 @@ accessory_head_lights_data : std.maz.prostor.head_light
 	low_beam_color_ambient: (0.001445, 0.001633, 0.00216)
 	low_beam_bias: 0.15
 	low_beam_range: 130.0
-	low_beam_angle: 100.0
+	low_beam_angle: 103.0
 	low_beam_aspect: 3.0
 	low_beam_refracted_color_fraction: 0.015
 	low_beam_refracted_offset_yz: (0.0, -1.2) # negative is further from truck
@@ -37,7 +37,7 @@ accessory_head_lights_data : std.maz.prostor.head_light
 	hi_beam_color_ambient: (0.001741, 0.001958, 0.002592)
 	hi_beam_bias: 0.15
 	hi_beam_range: 280.0
-	hi_beam_angle: 100.0
+	hi_beam_angle: 103.0
 	hi_beam_aspect: 3.0
 	hi_beam_refracted_color_fraction: 0.015
 	hi_beam_refracted_offset_yz: (0.0, -1.2)
@@ -54,7 +54,7 @@ accessory_head_lights_data : std.maz.prostor.head_light
 	front_beam_color_ambient: (0.001877, 0.00212, 0.002808)
 	front_beam_bias: 0.15
 	front_beam_range: 280.0
-	front_beam_angle: 100.0
+	front_beam_angle: 103.0
 	front_beam_aspect: 3.0
 	front_beam_refracted_color_fraction: 0.015
 	front_beam_refracted_offset_yz: (0.0, -1.2)
@@ -71,7 +71,7 @@ accessory_head_lights_data : std.maz.prostor.head_light
 	roof_beam_color_ambient: (0.001877, 0.00212, 0.002808)
 	roof_beam_bias: 0.2
 	roof_beam_range: 360.0
-	roof_beam_angle: 100.0
+	roof_beam_angle: 103.0
 	roof_beam_aspect: 3.0
 	roof_beam_refracted_color_fraction: 0.015
 	roof_beam_refracted_offset_yz: (0.0, -1.2)
@@ -88,7 +88,7 @@ accessory_head_lights_data : std.maz.prostor.head_light
 	front_roof_beam_color_ambient: (0.002025, 0.002282, 0.003024)
 	front_roof_beam_bias: 0.2
 	front_roof_beam_range: 360.0
-	front_roof_beam_angle: 100.0
+	front_roof_beam_angle: 103.0
 	front_roof_beam_aspect: 3.0
 	front_roof_beam_refracted_color_fraction: 0.015
 	front_roof_beam_refracted_offset_yz: (0.0, -1.2)

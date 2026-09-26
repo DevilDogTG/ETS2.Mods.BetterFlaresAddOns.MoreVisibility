@@ -49,12 +49,13 @@ IDENTITY_STAGE = dict(color_mult=1.0, range_mult=1.0, bias_add=0.0, angle_add=0.
 # T1 (1.0.0-dev.1): intensity only - v0.1.0's relative lift on v4.8's dimmer baseline.
 # T2 (1.0.0-dev.2): reach - v0.1.0's range/bias values as the starting point.
 # T3+T4 (1.0.0-dev.3): width +5 deg; near-field spill x1.5 / range x1.3.
+# T3 (1.0.0-dev.4): width +8 deg (user: a little wider than +5).
 STAGE_LEVERS = {
-    "low_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.3, bias_add=0.15, angle_add=5.0, refr_fraction_mult=1.5, refr_range_mult=1.3),
-    "hi_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.4, bias_add=0.15, angle_add=5.0, refr_fraction_mult=1.5, refr_range_mult=1.3),
-    "front_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.4, bias_add=0.15, angle_add=5.0, refr_fraction_mult=1.5, refr_range_mult=1.3),
-    "roof_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.5, bias_add=0.2, angle_add=5.0, refr_fraction_mult=1.5, refr_range_mult=1.3),
-    "front_roof_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.5, bias_add=0.2, angle_add=5.0, refr_fraction_mult=1.5, refr_range_mult=1.3),
+    "low_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.3, bias_add=0.15, angle_add=8.0, refr_fraction_mult=1.5, refr_range_mult=1.3),
+    "hi_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.4, bias_add=0.15, angle_add=8.0, refr_fraction_mult=1.5, refr_range_mult=1.3),
+    "front_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.4, bias_add=0.15, angle_add=8.0, refr_fraction_mult=1.5, refr_range_mult=1.3),
+    "roof_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.5, bias_add=0.2, angle_add=8.0, refr_fraction_mult=1.5, refr_range_mult=1.3),
+    "front_roof_beam": dict(IDENTITY_STAGE, color_mult=1.35, range_mult=1.5, bias_add=0.2, angle_add=8.0, refr_fraction_mult=1.5, refr_range_mult=1.3),
 }
 
 #   default_scale_mult  flare sprite size up close
@@ -64,9 +65,12 @@ STAGE_LEVERS = {
 IDENTITY_FLARE = dict(default_scale_mult=1.0, scale_factor_mult=1.0,
                       inner_angle_add=0.0, outer_angle_add=0.0)
 
+# T5 (1.0.0-dev.4): lamp glow - moderate sprite growth, cones +10 deg.
 FLARE_LEVERS = {
-    "vehicle_headl.sii": dict(IDENTITY_FLARE),
-    "vehicle_high_beam.sii": dict(IDENTITY_FLARE),
+    "vehicle_headl.sii": dict(IDENTITY_FLARE, default_scale_mult=1.15, scale_factor_mult=1.1,
+                  inner_angle_add=10.0, outer_angle_add=10.0),
+    "vehicle_high_beam.sii": dict(IDENTITY_FLARE, default_scale_mult=1.15, scale_factor_mult=1.1,
+                  inner_angle_add=10.0, outer_angle_add=10.0),
 }
 # ---------------------------------------------------------------------------
 
