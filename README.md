@@ -4,7 +4,7 @@ An ETS2 add-on for **Better Flares v4.8 - Headlights DOT 7500k** (by Avelium). T
 farther and spread wider for more comfortable night driving, and the road stays readable in bad
 daytime conditions, while keeping Better Flares' realistic mood.
 
-**Status: `1.0.0-dev` (in-game tuning).** Better Flares v4.8 only; DOT 7500k only.
+**Status: `1.0.0`.** Better Flares v4.8 only; DOT 7500k only.
 
 ## Load order
 Top = highest priority in Mod Manager:
@@ -34,6 +34,9 @@ top of the script:
 | `default_scale_mult` | `default_scale` |
 | `scale_factor_mult` | `scale_factor` |
 | `inner_angle_add` / `outer_angle_add` | `flare_inner_angle` / `flare_outer_angle` |
+
+Released values, per-round (Tx) history and how to run a new tuning round: see
+[`docs/tuning.md`](docs/tuning.md).
 
 Aim (`*_rot`), `aspect` and masks are never touched. Only files a lever actually changes are
 written, and the run fails if any written file references a mask the base pack doesn't ship.
