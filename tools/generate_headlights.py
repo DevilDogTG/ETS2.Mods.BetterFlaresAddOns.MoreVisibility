@@ -23,7 +23,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT_ROOT = ROOT / "src"
 
-EXTRACTED = Path(r"D:\Repositories\ETS2\Mods\Extracted\local\better-flares\4.8")
+# This host's extracted-reference root, from the ets2-mod-developer host config (`Extracted Reference Root`).
+sys.path.insert(0, str(Path.home() / ".agent-brains/profiles/ets2-mod-developer/skills/megapack/scripts"))
+from megapack import host_section  # noqa: E402
+
+EXTRACTED = Path(host_section("Extracted Reference Root")["root"]) / "local" / "better-flares" / "4.8"
 DEFAULT_SOURCE = EXTRACTED / "better_flares_v4.8_dot_7500"
 DEFAULT_BASE = EXTRACTED / "better_flares_v4.8_base"
 
