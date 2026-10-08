@@ -1,1 +1,1 @@
-{ "packageName": "drivedog_bf_morevisibility_dot7500", "prePack": ["python tools/generate_cover.py"] }
+{ "packageName": "drivedog_bf_morevisibility_dot7500", "game": "ets2", "prePack": ["python tools/generate_cover.py"] }

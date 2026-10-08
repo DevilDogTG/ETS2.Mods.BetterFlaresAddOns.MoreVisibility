@@ -53,7 +53,7 @@ Requires `scs_packer` (and `scs_extractor`, for verification) on `PATH`, and Pyt
 Packing runs `pack.config.json`'s `prePack` (`python tools/generate_cover.py`), which regenerates
 `src/cover.jpg` with the `manifest.sii` version badge. Commit the regenerated cover with a version bump.
 
-- **Local**: the `ets2-mod-developer` profile's `pack-mod` skill → versioned `.scs` in `output/local/`.
+- **Local**: the `scs-mod-developer` profile's `pack-mod` skill → versioned `.scs` in `output/local/`.
 - **Workshop**: `pack-mod` stages `output/workshop/` for the SCS Workshop Uploader.
 
 ## Updating for a new Better Flares release
