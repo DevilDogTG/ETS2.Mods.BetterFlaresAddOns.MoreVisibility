@@ -1,34 +1,41 @@
-[orange]DriveDogs: Better Flares More Visibility (DOT 7500K)
+[orange]DriveDogs: Better Flares More Visibility (7500K LED)
 
-[normal]An add-on for Better Flares v4.8 - Headlights DOT 7500k. Your truck's headlights reach
-farther and spread wider for more comfortable night driving, and the road stays readable in bad
-daytime conditions (rain, fog, overcast) - while keeping Better Flares' realistic mood.
+[normal]An add-on for Better Flares v4.9 - Headlights.2 7500K LED. Your truck's headlights spread
+wider and the high beam reaches farther for more comfortable night driving, and the headlamp glow
+stays readable in bad daytime conditions (rain, fog, overcast) - while keeping Better Flares'
+realistic mood.
 --------------------
 [orange]What changes
-[normal]- Brighter beams: every truck headlight stage (low, high, front and roof lamps) is 35%
-  brighter than Better Flares v4.8's own DOT 7500k values.
-- Longer reach: low beam reaches 30% farther, high beam and front lamps 40%, roof lamps 50%.
-- Wider beams: a few degrees wider, so road shoulders and curves are better lit.
-- Better near-field light: the area just in front of the bumper is lit more evenly.
+[normal]- Wider beams: every truck headlight stage (low, high, front and roof lamps) spreads 103
+  degrees instead of 90, so road shoulders and curves are better lit.
+- Longer high beam: high beam and front lamps reach 280 instead of 240 / 260.
 - More visible headlamps: the glow of the lamp itself is a little larger and stays visible from
   wider angles, so trucks read better in poor daylight.
 
 What does NOT change:
-- Beam aim, beam shape and cut-off (Better Flares' v4.8 pattern is kept as-is).
-- Light color temperature (still DOT 7500k).
+- Brightness, low beam and roof lamp reach, and the light just ahead of the bumper: Better Flares
+  v4.9's own values are kept.
+- Beam aim and beam pattern: your Better Flares Headlights.1 choice (any of them) is kept.
+- Light color temperature (7500K LED).
 - Tail lights, indicators, side markers and all other lights.
 --------------------
 [orange]Requirements / load order
 [normal]Top = highest priority in Mod Manager:
-1. DriveDogs: Better Flares More Visibility (DOT 7500K)   <- this mod
-2. Better Flares v4.8 - Headlights DOT 7500k
-3. Better Flares v4.8 - Base
+1. DriveDogs: Better Flares More Visibility (7500K LED)   <- this mod
+2. Better Flares - Headlights.2 7500K LED
+3. Better Flares - Headlights.1 (any one)
+4. Better Flares - City Lights Addon (optional)
+5. Better Flares - Traffic Addon (optional)
+6. Better Flares - Base
 
-Only for Better Flares v4.8 with the DOT 7500k headlight option. It replaces the truck headlight
-definitions, so it is not compatible with other Better Flares headlight options or with any other
-mod that replaces truck head_light files. The headlamp glow change may also apply to other
-vehicles that use Better Flares' headlight glow, such as AI traffic.
+Only for Better Flares v4.9. Headlights.1 and Headlights.2 are both required. This mod replaces
+Headlights.2's beam values, so loaded above another Headlights.2 colour it still gives 7500K
+light. The headlamp glow change may also apply to other vehicles that use Better Flares'
+headlight glow, such as AI traffic.
 --------------------
 [orange]Changelog
-[normal]1.0.0 - First release. Rebuilt for Better Flares v4.8 (replaces the older v4.7-based
+[normal]2.0.0 - Rebuilt for Better Flares v4.9 (1.0.0 breaks on v4.9: it used removed beam masks).
+Works with any Headlights.1 pattern. Better Flares v4.9 is already brighter and reaches farther
+on low beam, so only the wider beam, longer high beam and lamp glow are kept.
+1.0.0 - First release. Rebuilt for Better Flares v4.8 (replaces the older v4.7-based
 headlight visibility add-on, which shows broken light patterns on v4.8).

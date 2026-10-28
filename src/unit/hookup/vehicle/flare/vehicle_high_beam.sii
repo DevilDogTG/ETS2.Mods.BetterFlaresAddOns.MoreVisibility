@@ -3,8 +3,8 @@ SiiNunit
 flare_vehicle: flare.vehicle.high_beam
 {
 	dir_type: angle
-	flare_inner_angle: 80 # flare visibility cone
-	flare_outer_angle: 110 # flare fade out cone
+	flare_inner_angle: 75 # flare full visibility cone
+	flare_outer_angle: 90 # flare fade out cone
 	light_type: high_beam
 
 	model: "/model/flare/bf_75.pmd"

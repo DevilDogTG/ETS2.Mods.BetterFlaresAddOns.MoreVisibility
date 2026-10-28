@@ -1,0 +1,85 @@
+
+	low_beam_left_rot: (-0.55, 0.0, 0) # +up -down, +left -right, +counter clw -clw
+	low_beam_right_rot: (-0.4, -0.8, 0)
+	low_beam_color: (4.15, 4.675, 6.2)
+	low_beam_color_specular: (8.299, 9.351, 12.4)
+	low_beam_color_ambient: (0.00249, 0.00281, 0.00372)
+	low_beam_bias: 0.0
+	low_beam_range: 140.0
+	low_beam_angle: 103.0
+	low_beam_aspect: 2.0
+	low_beam_refracted_color_fraction: 0.02
+	low_beam_refracted_offset_yz: (0.0, -0.6) # negative is further from truck
+	low_beam_refracted_pitch: -10.0
+	low_beam_refracted_bias: 0.0
+	low_beam_refracted_range: 60.0
+	low_beam_refracted_angle: 150.0
+	low_beam_refracted_aspect: 2.0
+	
+	hi_beam_left_rot: (-0.55, 0.0, 0)
+	hi_beam_right_rot: (-0.4, -0.8, 0)
+	hi_beam_color: (4.772, 5.377, 7.13)
+	hi_beam_color_specular: (9.544, 10.753, 14.26)
+	hi_beam_color_ambient: (0.00286, 0.00323, 0.00428)
+	hi_beam_bias: 0.0
+	hi_beam_range: 280.0
+	hi_beam_angle: 103.0
+	hi_beam_aspect: 2.0
+	hi_beam_refracted_color_fraction: 0.02
+	hi_beam_refracted_offset_yz: (0.0, -0.6)
+	hi_beam_refracted_pitch: -10.0
+	hi_beam_refracted_bias: 0.0
+	hi_beam_refracted_range: 60.0
+	hi_beam_refracted_angle: 150.0
+	hi_beam_refracted_aspect: 2.0
+	
+	front_beam_left_rot: (-0.55, 0.0, 0)
+	front_beam_right_rot: (-0.4, -0.8, 0)
+	front_beam_color: (5.187, 5.844, 7.75)
+	front_beam_color_specular: (10.374, 11.689, 15.5)
+	front_beam_color_ambient: (0.00311, 0.00351, 0.00465)
+	front_beam_bias: 0.0
+	front_beam_range: 280.0
+	front_beam_angle: 103.0
+	front_beam_aspect: 2.0
+	front_beam_refracted_color_fraction: 0.02
+	front_beam_refracted_offset_yz: (0., -0.6)
+	front_beam_refracted_pitch: -10.0
+	front_beam_refracted_bias: 0.0
+	front_beam_refracted_range: 60.0
+	front_beam_refracted_angle: 150.0
+	front_beam_refracted_aspect: 2.0
+	
+	roof_beam_left_rot: (-0.55, 0.0, 0)
+	roof_beam_right_rot: (-0.4, -0.8, 0)
+	roof_beam_color: (5.187, 5.844, 7.75)
+	roof_beam_color_specular: (10.374, 11.689, 15.5)
+	roof_beam_color_ambient: (0.00311, 0.00351, 0.00465)
+	roof_beam_bias: 0.0
+	roof_beam_range: 400.0
+	roof_beam_angle: 103.0
+	roof_beam_aspect: 2.0
+	roof_beam_refracted_color_fraction: 0.02
+	roof_beam_refracted_offset_yz: (0., -0.6)
+	roof_beam_refracted_pitch: -10.0
+	roof_beam_refracted_bias: 0.0
+	roof_beam_refracted_range: 60.0
+	roof_beam_refracted_angle: 150.0
+	roof_beam_refracted_aspect: 2.0
+	
+	front_roof_beam_left_rot: (-0.55, 0.0, 0)
+	front_roof_beam_right_rot: (-0.4, -0.8, 0)
+	front_roof_beam_color: (5.602, 6.312, 8.37)
+	front_roof_beam_color_specular: (11.204, 12.624, 16.74)
+	front_roof_beam_color_ambient: (0.00336, 0.00379, 0.00502)
+	front_roof_beam_bias: 0.0
+	front_roof_beam_range: 400.0
+	front_roof_beam_angle: 103.0
+	front_roof_beam_aspect: 2.0
+	front_roof_beam_refracted_color_fraction: 0.02
+	front_roof_beam_refracted_offset_yz: (0., -0.6)
+	front_roof_beam_refracted_pitch: -10.0
+	front_roof_beam_refracted_bias: 0.0
+	front_roof_beam_refracted_range: 60.0
+	front_roof_beam_refracted_angle: 150.0
+	front_roof_beam_refracted_aspect: 2.0
