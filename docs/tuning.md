@@ -8,7 +8,34 @@ a future round (new Better Flares release, or a retune) starts from known ground
 the road stays readable; keep Better Flares' realistic mood (no arcade glare). The engine limits how
 visible a lamp can be in daylight; that ceiling is accepted.
 
-## Rounds
+## Better Flares v4.9 (2.x)
+
+Source: Headlights.2 7500K LED v4.9.1, one shared `def/vehicle/_common/color.sui` for every truck (ADR-0002).
+v4.9's own values already exceed 1.0.0 in brightness, low-beam and roof reach and near-field spill, so the 1.x
+relative levers are dropped (user, 2026-10-28). Kept from 1.0.0: the width and high-beam reach (as absolutes) and
+the T5 lamp glow.
+
+| Round | Lever group | Fields | Stock v4.9.1 7500K | Lever | Released 2.0.0 | Check in-game |
+|---|---|---|---|---|---|---|
+| T1 | Intensity | `*_color*` | low `(4.15, 4.675, 6.2)` | identity | stock | |
+| T2 | Reach | `*_range` | low 140 / hi 240 / front 260 / roof, front_roof 400 | `range_set` 280 on hi, front | 140 / 280 / 280 / 400 | High beam and aux lamps carry farther |
+| | | `*_bias` | 0.0 | identity | 0.0 | |
+| **T3** | Width | `*_angle` | 90° (aspect 2.0 untouched) | `angle_set` 103 (all stages) | 103° | Shoulders and curves; vertical glare on signs/trees (aspect 2.29 would keep v4.9's vertical spread) |
+| T4 | Near-field | `*_refracted_*` | fraction 0.02, range 60 | identity | stock | |
+| **T5** | Lamp glow | `vehicle_headl`: `default_scale` / `scale_factor` | 1.6 / 3.5 | ×1.15 / ×1.1 | 1.84 / 3.85 | Lamp readable in poor daylight |
+| | | `vehicle_headl`: `flare_inner_angle` / `flare_outer_angle` | 65° / 80° | +10 / +10 | 75° / 90° | |
+| | | `vehicle_high_beam`: `default_scale` / `scale_factor` | 1.8 / 4.0 | ×1.15 / ×1.1 | 2.07 / 4.4 | |
+| | | `vehicle_high_beam`: `flare_inner_angle` / `flare_outer_angle` | 65° / 80° | +10 / +10 | 75° / 90° | |
+
+Aim is one value for every truck in v4.9 (`low_beam_left_rot (-0.55, 0, 0)`), no longer per truck.
+
+| Build | Changed | Verdict |
+|---|---|---|
+| 2.0.0-dev.1 | Rebuilt on v4.9.1: angle 103, hi/front range 280, T5 glow; everything else stock | Clean log, user OK → released as 2.0.0 |
+
+## Better Flares v4.8 (1.x, history)
+
+### Rounds
 
 Values are Better Flares v4.8 DOT 7500k stock → released `1.0.0`. Head_light values are identical
 across all 261 truck files, so one row covers every truck.
@@ -33,7 +60,7 @@ values read low / hi, front / roof, front_roof.
 The T5 flare units are shared by every vehicle using Better Flares' headlight glow, most likely
 AI traffic too.
 
-## History
+### History
 
 | Build | Changed | Verdict |
 |---|---|---|

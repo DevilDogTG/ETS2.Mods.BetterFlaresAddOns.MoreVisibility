@@ -156,7 +156,7 @@ def add_text(img):
     max_width = w * 0.97 - x_start
 
     title_lines = ["More", "Visibility"]
-    subtitle = "Better Flares v4.8 — DOT 7500K"
+    subtitle = "Better Flares v4.9 — 7500K LED"
 
     title_size = int(h * 0.135)
     title_font = None

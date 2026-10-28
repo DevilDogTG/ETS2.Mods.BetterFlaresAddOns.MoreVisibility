@@ -1,6 +1,6 @@
 # ADR-0001: Generate the add-on from upstream Better Flares v4.8, v4.8 only
 
-- Status: accepted
+- Status: superseded by [ADR-0002](ADR-0002-generate-from-v49-color.md)
 - Date: 2026-09-26
 
 ## Context

@@ -2,8 +2,8 @@ SiiNunit
 {
 mod_package : .package_name
 {
-	package_version: "1.0.0"
-	display_name: "DriveDogs: Better Flares More Visibility (DOT 7500K)"
+	package_version: "2.0.0"
+	display_name: "DriveDogs: Better Flares More Visibility (7500K LED)"
 	author: "DevilDogTG"
 	category[]: "graphics"
 	icon: "cover.jpg"
