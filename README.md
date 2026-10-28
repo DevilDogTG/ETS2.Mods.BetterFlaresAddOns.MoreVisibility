@@ -4,7 +4,7 @@ An ETS2 add-on for **Better Flares v4.9 - Headlights.2 7500K LED** (by Avelium).
 wider and the high beam reaches farther for more comfortable night driving, and the headlamp glow stays
 readable in bad daytime conditions, while keeping Better Flares' realistic mood.
 
-**Status: `2.0.0-dev.1`.** Better Flares v4.9 only; 7500K LED only; any Headlights.1 pattern. `1.0.0` was for
+**Status: `2.0.0`.** Better Flares v4.9 only; 7500K LED only; any Headlights.1 pattern. `1.0.0` was for
 Better Flares v4.8 and breaks on v4.9 (removed beam masks).
 
 ## Load order
