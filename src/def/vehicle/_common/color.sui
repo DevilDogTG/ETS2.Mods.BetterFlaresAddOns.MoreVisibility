@@ -22,7 +22,7 @@
 	hi_beam_color_specular: (9.544, 10.753, 14.26)
 	hi_beam_color_ambient: (0.00286, 0.00323, 0.00428)
 	hi_beam_bias: 0.0
-	hi_beam_range: 350.0
+	hi_beam_range: 320.0
 	hi_beam_angle: 103.0
 	hi_beam_aspect: 2.0
 	hi_beam_refracted_color_fraction: 0.02
@@ -39,7 +39,7 @@
 	front_beam_color_specular: (10.374, 11.689, 15.5)
 	front_beam_color_ambient: (0.00311, 0.00351, 0.00465)
 	front_beam_bias: 0.0
-	front_beam_range: 280.0
+	front_beam_range: 350.0
 	front_beam_angle: 103.0
 	front_beam_aspect: 2.0
 	front_beam_refracted_color_fraction: 0.02
