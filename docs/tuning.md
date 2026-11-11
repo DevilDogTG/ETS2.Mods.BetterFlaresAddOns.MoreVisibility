@@ -15,10 +15,10 @@ v4.9's own values already exceed 1.0.0 in brightness, low-beam and roof reach an
 relative levers are dropped (user, 2026-10-28). Kept from 1.0.0: the width and high-beam reach (as absolutes) and
 the T5 lamp glow.
 
-| Round | Lever group | Fields | Stock v4.9.1 7500K | Lever | Released 2.0.0 | Check in-game |
+| Round | Lever group | Fields | Stock v4.9.1 7500K | Lever | Current (2.1.0-dev.1; 2.0.0 differs only in T2) | Check in-game |
 |---|---|---|---|---|---|---|
 | T1 | Intensity | `*_color*` | low `(4.15, 4.675, 6.2)` | identity | stock | |
-| T2 | Reach | `*_range` | low 140 / hi 240 / front 260 / roof, front_roof 400 | `range_set` 280 on hi, front | 140 / 280 / 280 / 400 | High beam and aux lamps carry farther |
+| T2 | Reach | `*_range` | low 140 / hi 240 / front 260 / roof, front_roof 400 | `range_set` 180 low, 350 hi, 280 front (2.0.0: hi 280, low stock) | 180 / 350 / 280 / 400 | Low and high beam carry farther |
 | | | `*_bias` | 0.0 | identity | 0.0 | |
 | **T3** | Width | `*_angle` | 90° (aspect 2.0 untouched) | `angle_set` 103 (all stages) | 103° | Shoulders and curves; vertical glare on signs/trees (aspect 2.29 would keep v4.9's vertical spread) |
 | T4 | Near-field | `*_refracted_*` | fraction 0.02, range 60 | identity | stock | |
@@ -32,6 +32,8 @@ Aim is one value for every truck in v4.9 (`low_beam_left_rot (-0.55, 0, 0)`), no
 | Build | Changed | Verdict |
 |---|---|---|
 | 2.0.0-dev.1 | Rebuilt on v4.9.1: angle 103, hi/front range 280, T5 glow; everything else stock | Clean log, user OK → released as 2.0.0 |
+| 3.0.0-dev.1 | Experiment: DBM Headlights Plus 1.4.1 truck defs above Headlights.1 (branch `feature/dbm-above-bf-experiment`) | Dropped: DBM's vanilla aim (-2.6°) and width (81°/75°) made the beam short and narrow |
+| 2.1.0-dev.1 | T2: low beam 180 (stock 140), high beam 350 (2.0.0: 280) | pending |
 
 ## Better Flares v4.8 (1.x, history)
 
