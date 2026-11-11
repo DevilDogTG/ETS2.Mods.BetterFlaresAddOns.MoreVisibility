@@ -1,19 +1,20 @@
 [orange]DriveDogs: Better Flares More Visibility (7500K LED)
 
 [normal]An add-on for Better Flares v4.9 - Headlights.2 7500K LED. Your truck's headlights spread
-wider and the high beam reaches farther for more comfortable night driving, and the headlamp glow
+wider and the low and high beams reach farther for more comfortable night driving, and the headlamp glow
 stays readable in bad daytime conditions (rain, fog, overcast) - while keeping Better Flares'
 realistic mood.
 --------------------
 [orange]What changes
 [normal]- Wider beams: every truck headlight stage (low, high, front and roof lamps) spreads 103
   degrees instead of 90, so road shoulders and curves are better lit.
-- Longer high beam: high beam and front lamps reach 280 instead of 240 / 260.
+- Longer low beam: reaches 180 instead of 140.
+- Longer high beam: reaches 350 instead of 240; the front lamps reach 280 instead of 260.
 - More visible headlamps: the glow of the lamp itself is a little larger and stays visible from
   wider angles, so trucks read better in poor daylight.
 
 What does NOT change:
-- Brightness, low beam and roof lamp reach, and the light just ahead of the bumper: Better Flares
+- Brightness, roof lamp reach, and the light just ahead of the bumper: Better Flares
   v4.9's own values are kept.
 - Beam aim and beam pattern: your Better Flares Headlights.1 choice (any of them) is kept.
 - Light color temperature (7500K LED).
