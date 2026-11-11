@@ -9,7 +9,7 @@ realistic mood.
 [normal]- Wider beams: every truck headlight stage (low, high, front and roof lamps) spreads 103
   degrees instead of 90, so road shoulders and curves are better lit.
 - Longer low beam: reaches 180 instead of 140.
-- Longer high beam: reaches 350 instead of 240; the front lamps reach 280 instead of 260.
+- Longer high beam: reaches 320 instead of 240; the front lamps reach 350 instead of 260.
 - More visible headlamps: the glow of the lamp itself is a little larger and stays visible from
   wider angles, so trucks read better in poor daylight.
 
