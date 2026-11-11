@@ -60,14 +60,16 @@ OWNED_DIRS = ("def/vehicle", FLARE_DIR)
 IDENTITY_STAGE = dict(color_mult=1.0, range_mult=1.0, range_set=None, bias_add=0.0,
                       angle_add=0.0, angle_set=None, refr_fraction_mult=1.0, refr_range_mult=1.0)
 
-# 2.0.0 on Better Flares v4.9 (user, 2026-10-28): brightness, low-beam and roof reach,
-# near-field spill, bias, aim and aspect stay Better Flares'. Kept from 1.0.0 as
-# absolutes: the wider beam (103 deg on every stage; v4.9 is 90) and the longer high
-# beam and front aux lamps (280; v4.9 is 240 / 260). The 1.x levers were relative to
-# v4.8, whose baseline v4.9 already exceeds (rounds in docs/tuning.md).
+# 2.0.0 on Better Flares v4.9 (user, 2026-10-28): brightness, roof reach, near-field
+# spill, bias, aim and aspect stay Better Flares'. Kept from 1.0.0 as absolutes: the
+# wider beam (103 deg on every stage; v4.9 is 90) and the longer front aux lamps (280;
+# v4.9 is 260). The 1.x levers were relative to v4.8, whose baseline v4.9 already
+# exceeds (rounds in docs/tuning.md).
+# 2.1.0 (user, 2026-11-11): longer low beam 180 (v4.9 is 140) and high beam 350
+# (2.0.0: 280; v4.9 is 240).
 STAGE_LEVERS = {
-    "low_beam": dict(IDENTITY_STAGE, angle_set=103.0),
-    "hi_beam": dict(IDENTITY_STAGE, angle_set=103.0, range_set=280.0),
+    "low_beam": dict(IDENTITY_STAGE, angle_set=103.0, range_set=180.0),
+    "hi_beam": dict(IDENTITY_STAGE, angle_set=103.0, range_set=350.0),
     "front_beam": dict(IDENTITY_STAGE, angle_set=103.0, range_set=280.0),
     "roof_beam": dict(IDENTITY_STAGE, angle_set=103.0),
     "front_roof_beam": dict(IDENTITY_STAGE, angle_set=103.0),
