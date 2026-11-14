@@ -55,19 +55,23 @@ OWNED_DIRS = ("def/vehicle", FLARE_DIR)
 #   angle_add           angle in degrees (width; aspect is left alone, so the
 #                       vertical FOV widens by the same ratio)
 #   angle_set           angle, absolute (used instead of angle_add)
+#   aspect_set          aspect, absolute (horizontal / vertical spread; None = upstream)
 #   refr_fraction_mult  refracted_color_fraction (near-field spill)
 #   refr_range_mult     refracted_range
 IDENTITY_STAGE = dict(color_mult=1.0, range_mult=1.0, range_set=None, bias_add=0.0,
-                      angle_add=0.0, angle_set=None, refr_fraction_mult=1.0, refr_range_mult=1.0)
+                      angle_add=0.0, angle_set=None, aspect_set=None, refr_fraction_mult=1.0,
+                      refr_range_mult=1.0)
 
 # 2.0.0 on Better Flares v4.9 (user, 2026-10-28): brightness, roof reach, near-field
 # spill, bias, aim and aspect stay Better Flares'. Kept from 1.0.0 as an absolute: the
 # wider beam (103 deg on every stage; v4.9 is 90). The 1.x levers were relative to
 # v4.8, whose baseline v4.9 already exceeds (rounds in docs/tuning.md).
-# 2.1.0 (user, 2026-11-11): longer low beam 180 (v4.9 is 140), high beam 320 and front
-# aux lamps 350 (2.0.0: 280 both; v4.9 is 240 / 260).
+# 2.1.0 (user, 2026-11-11..14): longer low beam 220 (v4.9 is 140), high beam 320 and
+# front aux lamps 350 (2.0.0: 280 both; v4.9 is 240 / 260). Low beam aspect 2.289
+# (= 2 x 103 / 90) keeps v4.9's vertical spread at 103 deg, so its cutoff is not
+# stretched taller; tools/generate_masks.py sharpens the cutoff itself.
 STAGE_LEVERS = {
-    "low_beam": dict(IDENTITY_STAGE, angle_set=103.0, range_set=180.0),
+    "low_beam": dict(IDENTITY_STAGE, angle_set=103.0, range_set=220.0, aspect_set=2.289),
     "hi_beam": dict(IDENTITY_STAGE, angle_set=103.0, range_set=320.0),
     "front_beam": dict(IDENTITY_STAGE, angle_set=103.0, range_set=350.0),
     "roof_beam": dict(IDENTITY_STAGE, angle_set=103.0),
@@ -132,6 +136,7 @@ def head_light_rule(key):
         "range": ("set", lv["range_set"]) if lv["range_set"] is not None else ("mult", lv["range_mult"]),
         "bias": ("add", lv["bias_add"]),
         "angle": ("set", lv["angle_set"]) if lv["angle_set"] is not None else ("add", lv["angle_add"]),
+        "aspect": ("set", lv["aspect_set"]) if lv["aspect_set"] is not None else ("set", None),
         "refracted_color_fraction": ("mult", lv["refr_fraction_mult"]),
         "refracted_range": ("mult", lv["refr_range_mult"]),
     }.get(m.group(2))
