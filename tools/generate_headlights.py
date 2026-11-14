@@ -69,9 +69,10 @@ IDENTITY_STAGE = dict(color_mult=1.0, range_mult=1.0, range_set=None, bias_add=0
 # 2.1.0 (user, 2026-11-11..14): longer low beam 220 (v4.9 is 140), high beam 320 and
 # front aux lamps 350 (2.0.0: 280 both; v4.9 is 240 / 260). Low beam aspect 2.289
 # (= 2 x 103 / 90) keeps v4.9's vertical spread at 103 deg, so its cutoff is not
-# stretched taller; tools/generate_masks.py sharpens the cutoff itself.
+# stretched taller; tools/generate_masks.py sharpens the cutoff and lifts its left side.
+# Low beam x1.3 brighter (2026-11-14: hard to see on the road at dusk).
 STAGE_LEVERS = {
-    "low_beam": dict(IDENTITY_STAGE, angle_set=103.0, range_set=220.0, aspect_set=2.289),
+    "low_beam": dict(IDENTITY_STAGE, color_mult=1.3, angle_set=103.0, range_set=220.0, aspect_set=2.289),
     "hi_beam": dict(IDENTITY_STAGE, angle_set=103.0, range_set=320.0),
     "front_beam": dict(IDENTITY_STAGE, angle_set=103.0, range_set=350.0),
     "roof_beam": dict(IDENTITY_STAGE, angle_set=103.0),
