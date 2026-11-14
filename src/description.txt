@@ -8,7 +8,8 @@ realistic mood.
 [orange]What changes
 [normal]- Wider beams: every truck headlight stage (low, high, front and roof lamps) spreads 103
   degrees instead of 90, so road shoulders and curves are better lit.
-- Longer low beam: reaches 180 instead of 140.
+- Longer low beam: reaches 220 instead of 140, with a sharper cutoff line: the glow above the
+  cutoff fades out faster, and the low beam keeps Better Flares' height while it spreads wider.
 - Longer high beam: reaches 320 instead of 240; the front lamps reach 350 instead of 260.
 - More visible headlamps: the glow of the lamp itself is a little larger and stays visible from
   wider angles, so trucks read better in poor daylight.
@@ -16,7 +17,8 @@ realistic mood.
 What does NOT change:
 - Brightness, roof lamp reach, and the light just ahead of the bumper: Better Flares
   v4.9's own values are kept.
-- Beam aim and beam pattern: your Better Flares Headlights.1 choice (any of them) is kept.
+- Beam aim and beam pattern: your Better Flares Headlights.1 choice (any of them) is kept;
+  only its low-beam cutoff is sharpened.
 - Light color temperature (7500K LED).
 - Tail lights, indicators, side markers and all other lights.
 --------------------
