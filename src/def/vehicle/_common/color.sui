@@ -1,9 +1,9 @@
 
 	low_beam_left_rot: (-0.55, 0.0, 0) # +up -down, +left -right, +counter clw -clw
 	low_beam_right_rot: (-0.4, -0.8, 0)
-	low_beam_color: (4.15, 4.675, 6.2)
-	low_beam_color_specular: (8.299, 9.351, 12.4)
-	low_beam_color_ambient: (0.00249, 0.00281, 0.00372)
+	low_beam_color: (5.395, 6.0775, 8.06)
+	low_beam_color_specular: (10.7887, 12.1563, 16.12)
+	low_beam_color_ambient: (0.003237, 0.003653, 0.004836)
 	low_beam_bias: 0.0
 	low_beam_range: 220.0
 	low_beam_angle: 103.0
