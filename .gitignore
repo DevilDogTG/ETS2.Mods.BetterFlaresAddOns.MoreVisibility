@@ -1,2 +1,4 @@
 output/
 __pycache__/
+# sharpened Better Flares low-beam masks, generated at pack time by tools/generate_masks.py
+src/material/

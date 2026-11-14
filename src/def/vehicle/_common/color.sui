@@ -5,9 +5,9 @@
 	low_beam_color_specular: (8.299, 9.351, 12.4)
 	low_beam_color_ambient: (0.00249, 0.00281, 0.00372)
 	low_beam_bias: 0.0
-	low_beam_range: 180.0
+	low_beam_range: 220.0
 	low_beam_angle: 103.0
-	low_beam_aspect: 2.0
+	low_beam_aspect: 2.289
 	low_beam_refracted_color_fraction: 0.02
 	low_beam_refracted_offset_yz: (0.0, -0.6) # negative is further from truck
 	low_beam_refracted_pitch: -10.0
