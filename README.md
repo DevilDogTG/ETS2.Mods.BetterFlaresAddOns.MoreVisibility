@@ -4,7 +4,7 @@ An ETS2 add-on for **Better Flares v4.9 - Headlights.2 7500K LED** (by Avelium).
 wider and the low and high beams reach farther for more comfortable night driving, and the headlamp glow stays
 readable in bad daytime conditions, while keeping Better Flares' realistic mood.
 
-**Status: `2.1.0-dev.3`** (low beam 220 with a sharper cutoff, high beam 320, front aux lamps 350; released `2.0.0`:
+**Status: `2.1.0-dev.4`** (low beam 220, x1.3 brighter, sharper cutoff with its left side raised, high beam 320, front aux lamps 350; released `2.0.0`:
 140 / 280 / 280). Better Flares v4.9 only; 7500K LED only; any Headlights.1 pattern. `1.0.0` was for
 Better Flares v4.8 and breaks on v4.9 (removed beam masks).
 
@@ -62,9 +62,10 @@ next to it) under this host's extracted-reference root (`scs-mod-developer` host
 override.
 
 `tools/generate_masks.py` writes sharper-cutoff copies of Better Flares Base's six low-beam masks
-(`material/custom/bf_<pattern>_norm`) to `src/material/custom/`: above each column's brightest row it scales pixels
-by (brightness / peak) ^ (`EDGE_GAMMA` - 1), so the glow over the cutoff fades out faster while the cutoff line and
-its steps stay put. The output is gitignored and regenerated at `prePack`.
+(`material/custom/bf_<pattern>_norm`) to `src/material/custom/`. Left of the centre step it raises the cutoff to at
+most `LEFT_LIFT_GAP` rows below the right side's level (at most `LEFT_LIFT_CAP` rows), so the left of the road is lit
+farther. Then, above each column's brightest row, it dims pixels below `EDGE_PROTECT` of the peak by a power curve
+(`EDGE_GAMMA`), so the glow over the cutoff fades out faster while the beam itself and the steps stay put. The output is gitignored and regenerated at `prePack`.
 
 ## Building
 Requires `scs_packer` (and `scs_extractor`, for verification) on `PATH`, and Python 3 with Pillow.
