@@ -4,7 +4,8 @@ An ETS2 add-on for **Better Flares v4.9 - Headlights.2 7500K LED** (by Avelium).
 wider and the low and high beams reach farther for more comfortable night driving, and the headlamp glow stays
 readable in bad daytime conditions, while keeping Better Flares' realistic mood.
 
-**Status: `2.1.0-dev.2`** (low beam 180, high beam 320, front aux lamps 350; released `2.0.0`: 140 / 280 / 280). Better Flares v4.9 only; 7500K LED only; any Headlights.1 pattern. `1.0.0` was for
+**Status: `2.1.0-dev.3`** (low beam 220 with a sharper cutoff, high beam 320, front aux lamps 350; released `2.0.0`:
+140 / 280 / 280). Better Flares v4.9 only; 7500K LED only; any Headlights.1 pattern. `1.0.0` was for
 Better Flares v4.8 and breaks on v4.9 (removed beam masks).
 
 ## Load order
@@ -34,7 +35,8 @@ top of the script:
 | `color_mult` | `*_color`, `*_color_specular`, `*_color_ambient` |
 | `range_mult` / `range_set` | `*_range` (relative / absolute) |
 | `bias_add` | `*_bias` |
-| `angle_add` / `angle_set` | `*_angle` (relative / absolute; aspect stays upstream, so vertical FOV scales too) |
+| `angle_add` / `angle_set` | `*_angle` (relative / absolute; vertical FOV scales too unless `aspect_set` compensates) |
+| `aspect_set` | `*_aspect` (absolute; horizontal / vertical spread) |
 | `refr_fraction_mult` | `*_refracted_color_fraction` |
 | `refr_range_mult` | `*_refracted_range` |
 
@@ -47,7 +49,7 @@ top of the script:
 Released values, per-round (Tx) history and how to run a new tuning round: see
 [`docs/tuning.md`](docs/tuning.md).
 
-Aim (`*_rot`) and `aspect` are never touched. Only files a lever actually changes are written. The run fails if any
+Aim (`*_rot`) is never touched. Only files a lever actually changes are written. The run fails if any
 Headlights.1 def next to the base pack doesn't include `/def/vehicle/_common/color.sui` or names a mask the base
 pack doesn't ship.
 
@@ -58,6 +60,11 @@ python tools/generate_headlights.py --all --out <dir>   # identity round-trip ch
 Defaults read `local/better-flares/4.9.1/bf_h2_7500K_led_v4.9.1` and `bf_base_v4.9.1` (with the `bf_h1_*` packs
 next to it) under this host's extracted-reference root (`scs-mod-developer` host config); `--source` / `--base`
 override.
+
+`tools/generate_masks.py` writes sharper-cutoff copies of Better Flares Base's six low-beam masks
+(`material/custom/bf_<pattern>_norm`) to `src/material/custom/`: above each column's brightest row it scales pixels
+by (brightness / peak) ^ (`EDGE_GAMMA` - 1), so the glow over the cutoff fades out faster while the cutoff line and
+its steps stay put. The output is gitignored and regenerated at `prePack`.
 
 ## Building
 Requires `scs_packer` (and `scs_extractor`, for verification) on `PATH`, and Python 3 with Pillow.
