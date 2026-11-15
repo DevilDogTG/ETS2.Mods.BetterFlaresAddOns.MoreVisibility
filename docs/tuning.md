@@ -21,7 +21,7 @@ the T5 lamp glow.
 | T2 | Reach | `*_range` | low 140 / hi 240 / front 260 / roof, front_roof 400 | `range_set` 220 low, 320 hi, 350 front (2.0.0: stock low, 280 hi and front) | 220 / 320 / 350 / 400 | Low beam, high beam and aux lamps carry farther |
 | | | `*_bias` | 0.0 | identity | 0.0 | |
 | **T3** | Width | `*_angle` | 90° (aspect 2.0 untouched) | `angle_set` 103 (all stages); low beam `aspect_set` 2.289 | 103°; low beam aspect 2.289 (keeps v4.9's vertical spread, if vertical = angle / aspect) | Shoulders and curves; low-beam cutoff not stretched taller |
-| **T6** | Cutoff | low-beam mask `bf_<pattern>_norm` | BF's soft glow above the cutoff (10-90% edge 9-46 px of 512) | `EDGE_GAMMA` 2 below `EDGE_PROTECT` 50% of the column peak; left lift `LEFT_LIFT_GAP` 2 / `LEFT_LIFT_CAP` 10 rows (`tools/generate_masks.py`) | edge 4-32 px; left cutoff 1-10 rows higher | Crisp cutoff line; left of the road lit farther, no dark diagonal left of centre |
+| **T6** | Cutoff | low-beam mask `bf_<pattern>_norm` | BF's soft glow above the cutoff (10-90% edge 9-46 px of 512) | `EDGE_GAMMA` 2 below `EDGE_PROTECT` 50% of the column peak; left lift `LEFT_LIFT_GAP` 0 / `LEFT_LIFT_CAP` 14 rows (`tools/generate_masks.py`) | edge 4-32 px; left cutoff 3-14 rows higher | Crisp cutoff line; left of the road lit farther, no dark diagonal left of centre |
 | T4 | Near-field | `*_refracted_*` | fraction 0.02, range 60 | identity | stock | |
 | **T5** | Lamp glow | `vehicle_headl`: `default_scale` / `scale_factor` | 1.6 / 3.5 | ×1.15 / ×1.1 | 1.84 / 3.85 | Lamp readable in poor daylight |
 | | | `vehicle_headl`: `flare_inner_angle` / `flare_outer_angle` | 65° / 80° | +10 / +10 | 75° / 90° | |
@@ -37,7 +37,8 @@ Aim is one value for every truck in v4.9 (`low_beam_left_rot (-0.55, 0, 0)`), no
 | 2.1.0-dev.1 | T2: low beam 180 (stock 140), high beam 350 (2.0.0: 280) | User: front aux lamps longer, high beam a bit shorter |
 | 2.1.0-dev.2 | T2: high beam 320, front aux lamps 350 (dev.1: 350 / 280) | User: more low beam, cutoff looks stretched; wants it sharp like BF's reference shot |
 | 2.1.0-dev.3 | T2 low beam 220; T3 low-beam aspect 2.289; T6 sharpened low-beam masks (gamma 2) | User: left side ends far too close (dark diagonal left of centre); hard to see the road at dusk |
-| 2.1.0-dev.4 | T6: left cutoff lifted (gap 2, cap 10 rows), gamma only below 50% of the peak; T1: low beam x1.3 | pending |
+| 2.1.0-dev.4 | T6: left cutoff lifted (gap 2, cap 10 rows), gamma only below 50% of the peak; T1: low beam x1.3 | User: left side better, still a bit short |
+| 2.1.0-dev.5 | T6: left cutoff up to the right side's level (gap 0, cap 14 rows) | pending |
 
 ## Better Flares v4.8 (1.x, history)
 
