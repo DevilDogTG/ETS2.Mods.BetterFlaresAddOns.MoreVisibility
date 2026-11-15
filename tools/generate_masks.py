@@ -40,8 +40,8 @@ PATTERNS = ("proj_dot1", "proj_dot2", "proj_dot3", "proj_ece1", "refl_dot1", "re
 OWNED_DIRS = ("material",)
 
 # --- Levers ------------------------------------------------------------------
-LEFT_LIFT_GAP = 2      # rows the left cutoff stays below the right side's level (None = no lift)
-LEFT_LIFT_CAP = 10     # max rows a column is raised (0.9 deg at 103 deg / aspect 2.289)
+LEFT_LIFT_GAP = 0      # rows the left cutoff stays below the right side's level (None = no lift)
+LEFT_LIFT_CAP = 14     # max rows a column is raised (1.2 deg at 103 deg / aspect 2.289)
 EDGE_GAMMA = 2.0       # 1.0 = upstream; 2.0 halves a glow at 25% of the peak, 10% -> 2%
 EDGE_PROTECT = 0.5     # pixels at or above this fraction of the column peak are never dimmed
 
