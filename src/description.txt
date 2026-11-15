@@ -38,7 +38,10 @@ light. The headlamp glow change may also apply to other vehicles that use Better
 headlight glow, such as AI traffic.
 --------------------
 [orange]Changelog
-[normal]2.0.0 - Rebuilt for Better Flares v4.9 (1.0.0 breaks on v4.9: it used removed beam masks).
+[normal]2.1.0 - Longer, brighter low beam: reaches 220 instead of 140 and is 30% brighter for dusk.
+Its cutoff line is sharper and its left side is raised to the right side's level, so the left of
+the road is lit farther. High beam 320 (2.0.0: 280), front lamps 350 (2.0.0: 280).
+2.0.0 - Rebuilt for Better Flares v4.9 (1.0.0 breaks on v4.9: it used removed beam masks).
 Works with any Headlights.1 pattern. Better Flares v4.9 is already brighter and reaches farther
 on low beam, so only the wider beam, longer high beam and lamp glow are kept.
 1.0.0 - First release. Rebuilt for Better Flares v4.8 (replaces the older v4.7-based
