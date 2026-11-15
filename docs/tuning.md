@@ -15,7 +15,7 @@ v4.9's own values already exceed 1.0.0 in brightness, low-beam and roof reach an
 relative levers are dropped (user, 2026-10-28). Kept from 1.0.0: the width and high-beam reach (as absolutes) and
 the T5 lamp glow.
 
-| Round | Lever group | Fields | Stock v4.9.1 7500K | Lever | Current (2.1.0-dev.2; 2.0.0 differs only in T2) | Check in-game |
+| Round | Lever group | Fields | Stock v4.9.1 7500K | Lever | Released 2.1.0 (2.0.0: T1 identity, T2 140 / 280 / 280, T3 aspect 2.0, no T6) | Check in-game |
 |---|---|---|---|---|---|---|
 | T1 | Intensity | `*_color*` | low `(4.15, 4.675, 6.2)` | low beam `color_mult` 1.3 (2.0.0: identity) | low `(5.395, 6.0775, 8.06)`; others stock | Road visible at dusk; no whiteout up close at night |
 | T2 | Reach | `*_range` | low 140 / hi 240 / front 260 / roof, front_roof 400 | `range_set` 220 low, 320 hi, 350 front (2.0.0: stock low, 280 hi and front) | 220 / 320 / 350 / 400 | Low beam, high beam and aux lamps carry farther |
@@ -38,7 +38,7 @@ Aim is one value for every truck in v4.9 (`low_beam_left_rot (-0.55, 0, 0)`), no
 | 2.1.0-dev.2 | T2: high beam 320, front aux lamps 350 (dev.1: 350 / 280) | User: more low beam, cutoff looks stretched; wants it sharp like BF's reference shot |
 | 2.1.0-dev.3 | T2 low beam 220; T3 low-beam aspect 2.289; T6 sharpened low-beam masks (gamma 2) | User: left side ends far too close (dark diagonal left of centre); hard to see the road at dusk |
 | 2.1.0-dev.4 | T6: left cutoff lifted (gap 2, cap 10 rows), gamma only below 50% of the peak; T1: low beam x1.3 | User: left side better, still a bit short |
-| 2.1.0-dev.5 | T6: left cutoff up to the right side's level (gap 0, cap 14 rows) | pending |
+| 2.1.0-dev.5 | T6: left cutoff up to the right side's level (gap 0, cap 14 rows) | User OK for now → released as 2.1.0 |
 
 ## Better Flares v4.8 (1.x, history)
 
